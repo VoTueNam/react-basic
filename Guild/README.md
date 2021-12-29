@@ -117,11 +117,11 @@ khi gọi memo thì cứ gọi thằng này trong toàn bộ function truyền q
  Khi component re-render, các function khai báo bên trong có thể sẽ chạy lại ko cần thiết
 
 ### ví dụ
- const total = useMemo(()=>{
+{ const total = useMemo(()=>{
      //tính toán phức tạp
 
      return [giá trị]
- },[deps])
+ },[deps])}
 
  --- cách truyền tham số y như useEffect
 
