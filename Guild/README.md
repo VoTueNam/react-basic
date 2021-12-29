@@ -7,7 +7,7 @@ setupTest.js --> để setup test component
 
 # use State -> thay đổi giao diện tự động
 
-import { useState } from 'react'
+ ```import { useState } from 'react' ```
 
 Giá trị đầu vào là giá trị khởi tạo -> return ra cái mảng
 [state , setState]
@@ -16,10 +16,11 @@ Giá trị đầu vào là giá trị khởi tạo -> return ra cái mảng
 
 Dùng callback với setState
 Tương tự cũng làm đc với hàm khởi tạo
-
+ ```
 const [counter, setCounter] = useState(()=>{
     //tính toán ở trong này rồi return lại
-})
+}) 
+```
 ### xem code ở learningHook/useState.js
 
 React jS là one-way binding
@@ -93,7 +94,7 @@ mỗi khi component cha re-render lại thì những component con phụ thuộc
 memo nhận vào 1 component, nó sẽ check xem component có thay đổi hay ko, nếu ko có thay đổi gì cả thì sẽ ko re-render (giải quyết đc vấn đề ở trên), nếu có thì render như bình thường thôi
 
 # Cách dùng:
-export default memo(Content)
+ ```export default memo(Content) ```
 
 
 # useCallback
@@ -156,32 +157,34 @@ khi gọi memo thì cứ gọi thằng này trong toàn bộ function truyền q
  --> Đặt lại tên : 
  
  import styles from 'tên file.module.css'
- className={styles.className} (đổi class name thành giống trg file)
+  ```className={styles.className} ``` (đổi class name thành giống trg file)
 
  # Chú ý:
  Cách này ko sử dụng theo tagName đc - nó sẽ ảnh hưởng toàn bộ css
 
  # Một thẻ có nhiều class name
- className = {`${style.classNam1} className2`}
+  ```className = {`${style.classNam1} className2`} ```
  --> Nó nhận vào cái chuỗi, làm sao cũng đc
 
  # clsx 
  Cài vào npm bình thường thôi: npm i clsx
-
+ ```
  className ={clsx(style.className1, "className2")}
-
+ ```
  # class động thì sao
+  ```
  className ={clsx(style.className1, {
      [styles.className2] : true
- })}
+ })} ```
 
  // True là hiện False là ko - ko có [] nó sẽ ko nhận đúng đâu
 
  # scss 
  install và xài như bình thường thôi, nó tự hiểu
- npm i sass ---> ko phải scss đâu
+  ```npm i sass ``` ---> ko phải scss đâu
 
  # Router DOM
  Đơn giản là định tuyến
- 
+ ```
  npm i react-router-dom@6
+ ```
