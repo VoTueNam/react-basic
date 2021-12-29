@@ -175,7 +175,8 @@ khi gọi memo thì cứ gọi thằng này trong toàn bộ function truyền q
   ```
  className ={clsx(style.className1, {
      [styles.className2] : true
- })} ```
+ })} 
+ ```
 
  // True là hiện False là ko - ko có [] nó sẽ ko nhận đúng đâu
 
@@ -185,6 +186,7 @@ khi gọi memo thì cứ gọi thằng này trong toàn bộ function truyền q
 
  # Router DOM
  Đơn giản là định tuyến
+ 
  ```
  npm i react-router-dom@6
  ```
